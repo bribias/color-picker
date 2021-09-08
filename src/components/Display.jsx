@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ color }) => {
+const Display = ({ color, image }) => {
   return <div style={{
     background: color,
     width: 500,
@@ -12,6 +12,7 @@ const Display = ({ color }) => {
 
 Display.propTypes = {
   color: PropTypes.string.isRequired,
+  image: PropTypes.string
 };
 
 export default Display;
